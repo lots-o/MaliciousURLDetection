@@ -8,12 +8,13 @@ def load_csic_2010_txt(fname: str) -> List[str]:
     with open(fname, "r") as f:
         for line in f.readlines():
             line = line.strip("\n")
-            if "GET" in line or "POST" in line:
+            if "GET" in line or "POST" in line or "PUT" in line:
                 if request:
                     requests.append(request)
                 request = line
             elif line.strip():
                 request += f" {line}"
+    requests.append(request)
     return requests
 
 
