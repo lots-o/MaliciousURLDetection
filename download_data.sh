@@ -7,11 +7,11 @@ unrar e normalTrafficTraining.rar
 unrar e normalTrafficTest.rar 
 unrar e anomalousTrafficTest.rar 
 
-mkdir data/
+mkdir data/raw
 
-mv normalTrafficTraining.txt ./data
-mv normalTrafficTest.txt ./data
-mv anomalousTrafficTest.txt ./data 
+mv normalTrafficTraining.txt ./data/raw
+mv normalTrafficTest.txt ./data/raw
+mv anomalousTrafficTest.txt ./data/raw
 
 rm normalTrafficTraining.rar
 rm normalTrafficTest.rar

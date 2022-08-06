@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 
 import utils.preprocessing as p
 
-root_dir = "./data"
+root_dir = "./data/raw"
 save_dir = "./data/preprocessing"
 
 if not os.path.isdir(save_dir):
